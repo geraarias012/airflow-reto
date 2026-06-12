@@ -9,6 +9,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), "../scripts"))
 from validar import validar_datos
 from leer_csv import leer_csv
 from reglas import aplicar_reglas
+from guardar_bd import guardar_bd
 
 with DAG(
     dag_id="devoluciones_dag",
@@ -29,6 +30,10 @@ with DAG(
         task_id="aplicar_reglas",
         python_callable=aplicar_reglas,
     )   
+    guardar = PythonOperator(
+        task_id="guardar_bd",
+        python_callable=guardar_bd,
+    )
 
-    leer_archivo >> validar_archivo >> reglas
+    leer_archivo >> validar_archivo >> reglas >> guardar
     
