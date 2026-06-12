@@ -1,0 +1,32 @@
+{"timestamp":"2026-06-12T22:33:09.573700Z","level":"info","event":"::group::Pre Execute","logger":"task","filename":"task_runner.py","lineno":1926}
+{"timestamp":"2026-06-12T22:33:09.899461Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","run_id":"manual__2026-06-12T22:33:07.172900+00:00","dag_id":"devoluciones_dag","task_id":"aplicar_reglas","ti_id":"019ebdf7-b175-7893-89e3-c18099e5722c","map_index":-1,"try_number":1,"logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":209}
+{"timestamp":"2026-06-12T22:33:09.900747Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/devoluciones_dag.py","run_id":"manual__2026-06-12T22:33:07.172900+00:00","dag_id":"devoluciones_dag","task_id":"aplicar_reglas","ti_id":"019ebdf7-b175-7893-89e3-c18099e5722c","map_index":-1,"try_number":1,"logger":"airflow.dag_processing.dagbag.BundleDagBag","filename":"dagbag.py","lineno":469}
+{"timestamp":"2026-06-12T22:33:09.929631Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"UserWarning","filename":"/opt/airflow/dags/devoluciones_dag.py","lineno":2,"run_id":"manual__2026-06-12T22:33:07.172900+00:00","dag_id":"devoluciones_dag","task_id":"aplicar_reglas","ti_id":"019ebdf7-b175-7893-89e3-c18099e5722c","map_index":-1,"try_number":1,"logger":"py.warnings"}
+{"timestamp":"2026-06-12T22:33:09.957353Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-06-12T22:33:09.957788Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-06-12T22:33:09.958028Z","level":"info","event":"Current task name:aplicar_reglas","logger":"task.stdout"}
+{"timestamp":"2026-06-12T22:33:09.958238Z","level":"info","event":"Dag name:devoluciones_dag","logger":"task.stdout"}
+{"timestamp":"2026-06-12T22:33:09.957824Z","level":"info","event":"::endgroup::","run_id":"manual__2026-06-12T22:33:07.172900+00:00","dag_id":"devoluciones_dag","task_id":"aplicar_reglas","ti_id":"019ebdf7-b175-7893-89e3-c18099e5722c","map_index":-1,"try_number":1,"logger":"task","filename":"task_runner.py","lineno":1727}
+{"timestamp":"2026-06-12T22:33:09.967269Z","level":"info","event":"RESULTADO DE LAS REGLAS","logger":"task.stdout"}
+{"timestamp":"2026-06-12T22:33:09.974803Z","level":"info","event":"   transaction_id    monto     estado                   regla_aplicada","logger":"task.stdout"}
+{"timestamp":"2026-06-12T22:33:09.975115Z","level":"info","event":"0          TXN001    150.0   APROBADA            Aprobación automática","logger":"task.stdout"}
+{"timestamp":"2026-06-12T22:33:09.975328Z","level":"info","event":"1          TXN002   2500.0  PENDIENTE  Requiere aprobación del gerente","logger":"task.stdout"}
+{"timestamp":"2026-06-12T22:33:09.975596Z","level":"info","event":"2          TXN003     75.5   APROBADA            Aprobación automática","logger":"task.stdout"}
+{"timestamp":"2026-06-12T22:33:09.975869Z","level":"info","event":"3          TXN004   8000.0   REVISION                Revisión especial","logger":"task.stdout"}
+{"timestamp":"2026-06-12T22:33:09.976125Z","level":"info","event":"4          TXN005    320.0   APROBADA            Aprobación automática","logger":"task.stdout"}
+{"timestamp":"2026-06-12T22:33:09.976459Z","level":"info","event":"5          TXN006   1500.0  PENDIENTE  Requiere aprobación del gerente","logger":"task.stdout"}
+{"timestamp":"2026-06-12T22:33:09.976687Z","level":"info","event":"6          TXN007     50.0   APROBADA            Aprobación automática","logger":"task.stdout"}
+{"timestamp":"2026-06-12T22:33:09.977156Z","level":"info","event":"7          TXN008   6500.0   REVISION                Revisión especial","logger":"task.stdout"}
+{"timestamp":"2026-06-12T22:33:09.977356Z","level":"info","event":"8          TXN009    900.0   APROBADA            Aprobación automática","logger":"task.stdout"}
+{"timestamp":"2026-06-12T22:33:09.977552Z","level":"info","event":"9          TXN010   3200.0  PENDIENTE  Requiere aprobación del gerente","logger":"task.stdout"}
+{"timestamp":"2026-06-12T22:33:09.977834Z","level":"info","event":"10         TXN011    200.0   APROBADA            Aprobación automática","logger":"task.stdout"}
+{"timestamp":"2026-06-12T22:33:09.978073Z","level":"info","event":"11         TXN012  12000.0   REVISION                Revisión especial","logger":"task.stdout"}
+{"timestamp":"2026-06-12T22:33:09.978360Z","level":"info","event":"12         TXN013    450.0   APROBADA            Aprobación automática","logger":"task.stdout"}
+{"timestamp":"2026-06-12T22:33:09.978623Z","level":"info","event":"13         TXN014   1200.0  PENDIENTE  Requiere aprobación del gerente","logger":"task.stdout"}
+{"timestamp":"2026-06-12T22:33:09.978881Z","level":"info","event":"14         TXN015   5500.0   REVISION                Revisión especial","logger":"task.stdout"}
+{"timestamp":"2026-06-12T22:33:09.978812Z","level":"info","event":"Done. Returned value was: None","run_id":"manual__2026-06-12T22:33:07.172900+00:00","dag_id":"devoluciones_dag","task_id":"aplicar_reglas","ti_id":"019ebdf7-b175-7893-89e3-c18099e5722c","map_index":-1,"try_number":1,"logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":233}
+{"timestamp":"2026-06-12T22:33:09.978952Z","level":"info","event":"::group::Post Execute","run_id":"manual__2026-06-12T22:33:07.172900+00:00","dag_id":"devoluciones_dag","task_id":"aplicar_reglas","ti_id":"019ebdf7-b175-7893-89e3-c18099e5722c","map_index":-1,"try_number":1,"logger":"task","filename":"task_runner.py","lineno":1288}
+{"timestamp":"2026-06-12T22:33:09.998742Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-06-12T22:33:09.999001Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-06-12T22:33:09.999288Z","level":"info","event":"Task operator:<Task(PythonOperator): aplicar_reglas>","logger":"task.stdout"}
+{"timestamp":"2026-06-12T22:33:09.999318Z","level":"info","event":"::endgroup::","run_id":"manual__2026-06-12T22:33:07.172900+00:00","dag_id":"devoluciones_dag","task_id":"aplicar_reglas","ti_id":"019ebdf7-b175-7893-89e3-c18099e5722c","map_index":-1,"try_number":1,"logger":"task","filename":"task_runner.py","lineno":1896}

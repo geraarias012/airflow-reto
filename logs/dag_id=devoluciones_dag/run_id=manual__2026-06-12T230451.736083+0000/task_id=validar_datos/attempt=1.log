@@ -1,0 +1,33 @@
+{"timestamp":"2026-06-12T23:04:53.309834Z","level":"info","event":"::group::Pre Execute","logger":"task","filename":"task_runner.py","lineno":1926}
+{"timestamp":"2026-06-12T23:04:53.638012Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","map_index":-1,"run_id":"manual__2026-06-12T23:04:51.736083+00:00","task_id":"validar_datos","ti_id":"019ebe14-c129-77e7-93f0-90324680b8a3","dag_id":"devoluciones_dag","try_number":1,"logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":209}
+{"timestamp":"2026-06-12T23:04:53.639358Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/devoluciones_dag.py","map_index":-1,"run_id":"manual__2026-06-12T23:04:51.736083+00:00","task_id":"validar_datos","ti_id":"019ebe14-c129-77e7-93f0-90324680b8a3","dag_id":"devoluciones_dag","try_number":1,"logger":"airflow.dag_processing.dagbag.BundleDagBag","filename":"dagbag.py","lineno":469}
+{"timestamp":"2026-06-12T23:04:53.672273Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"UserWarning","filename":"/opt/airflow/dags/devoluciones_dag.py","lineno":2,"map_index":-1,"run_id":"manual__2026-06-12T23:04:51.736083+00:00","task_id":"validar_datos","ti_id":"019ebe14-c129-77e7-93f0-90324680b8a3","dag_id":"devoluciones_dag","try_number":1,"logger":"py.warnings"}
+{"timestamp":"2026-06-12T23:04:53.693910Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-06-12T23:04:53.694307Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-06-12T23:04:53.694582Z","level":"info","event":"Current task name:validar_datos","logger":"task.stdout"}
+{"timestamp":"2026-06-12T23:04:53.695000Z","level":"info","event":"Dag name:devoluciones_dag","logger":"task.stdout"}
+{"timestamp":"2026-06-12T23:04:53.694456Z","level":"info","event":"::endgroup::","map_index":-1,"run_id":"manual__2026-06-12T23:04:51.736083+00:00","task_id":"validar_datos","ti_id":"019ebe14-c129-77e7-93f0-90324680b8a3","dag_id":"devoluciones_dag","try_number":1,"logger":"task","filename":"task_runner.py","lineno":1727}
+{"timestamp":"2026-06-12T23:04:53.725037Z","level":"info","event":"   transaction_id       fecha  ...     estado  validacion","logger":"task.stdout"}
+{"timestamp":"2026-06-12T23:04:53.725433Z","level":"info","event":"0          TXN001  2026-06-01  ...  pendiente          OK","logger":"task.stdout"}
+{"timestamp":"2026-06-12T23:04:53.725735Z","level":"info","event":"1          TXN002  2026-06-01  ...  pendiente          OK","logger":"task.stdout"}
+{"timestamp":"2026-06-12T23:04:53.725989Z","level":"info","event":"2          TXN003  2026-06-02  ...  pendiente          OK","logger":"task.stdout"}
+{"timestamp":"2026-06-12T23:04:53.726215Z","level":"info","event":"3          TXN004  2026-06-02  ...  pendiente          OK","logger":"task.stdout"}
+{"timestamp":"2026-06-12T23:04:53.726513Z","level":"info","event":"4          TXN005  2026-06-03  ...  pendiente          OK","logger":"task.stdout"}
+{"timestamp":"2026-06-12T23:04:53.726838Z","level":"info","event":"5          TXN006  2026-06-03  ...  pendiente          OK","logger":"task.stdout"}
+{"timestamp":"2026-06-12T23:04:53.727092Z","level":"info","event":"6          TXN007  2026-06-04  ...  pendiente          OK","logger":"task.stdout"}
+{"timestamp":"2026-06-12T23:04:53.727389Z","level":"info","event":"7          TXN008  2026-06-04  ...  pendiente          OK","logger":"task.stdout"}
+{"timestamp":"2026-06-12T23:04:53.727615Z","level":"info","event":"8          TXN009  2026-06-05  ...  pendiente          OK","logger":"task.stdout"}
+{"timestamp":"2026-06-12T23:04:53.727864Z","level":"info","event":"9          TXN010  2026-06-05  ...  pendiente          OK","logger":"task.stdout"}
+{"timestamp":"2026-06-12T23:04:53.728063Z","level":"info","event":"10         TXN011  2026-06-06  ...  pendiente          OK","logger":"task.stdout"}
+{"timestamp":"2026-06-12T23:04:53.728304Z","level":"info","event":"11         TXN012  2026-06-06  ...  pendiente          OK","logger":"task.stdout"}
+{"timestamp":"2026-06-12T23:04:53.728570Z","level":"info","event":"12         TXN013  2026-06-07  ...  pendiente          OK","logger":"task.stdout"}
+{"timestamp":"2026-06-12T23:04:53.728865Z","level":"info","event":"13         TXN014  2026-06-07  ...  pendiente          OK","logger":"task.stdout"}
+{"timestamp":"2026-06-12T23:04:53.729067Z","level":"info","event":"14         TXN015  2026-06-08  ...  pendiente          OK","logger":"task.stdout"}
+{"timestamp":"2026-06-12T23:04:53.729350Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-06-12T23:04:53.729563Z","level":"info","event":"[15 rows x 10 columns]","logger":"task.stdout"}
+{"timestamp":"2026-06-12T23:04:53.729740Z","level":"info","event":"Done. Returned value was: None","map_index":-1,"run_id":"manual__2026-06-12T23:04:51.736083+00:00","task_id":"validar_datos","ti_id":"019ebe14-c129-77e7-93f0-90324680b8a3","dag_id":"devoluciones_dag","try_number":1,"logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":233}
+{"timestamp":"2026-06-12T23:04:53.729980Z","level":"info","event":"::group::Post Execute","map_index":-1,"run_id":"manual__2026-06-12T23:04:51.736083+00:00","task_id":"validar_datos","ti_id":"019ebe14-c129-77e7-93f0-90324680b8a3","dag_id":"devoluciones_dag","try_number":1,"logger":"task","filename":"task_runner.py","lineno":1288}
+{"timestamp":"2026-06-12T23:04:53.749244Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-06-12T23:04:53.749554Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-06-12T23:04:53.749892Z","level":"info","event":"Task operator:<Task(PythonOperator): validar_datos>","logger":"task.stdout"}
+{"timestamp":"2026-06-12T23:04:53.749615Z","level":"info","event":"::endgroup::","map_index":-1,"run_id":"manual__2026-06-12T23:04:51.736083+00:00","task_id":"validar_datos","ti_id":"019ebe14-c129-77e7-93f0-90324680b8a3","dag_id":"devoluciones_dag","try_number":1,"logger":"task","filename":"task_runner.py","lineno":1896}
