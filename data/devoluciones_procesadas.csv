@@ -1,0 +1,16 @@
+transaction_id,fecha,cuenta_origen,cuenta_destino,monto,moneda,tipo,descripcion,estado,validacion,regla_aplicada
+TXN001,2026-06-01,4532015112830366,4485276012450445,150.0,MXN,devolucion,Devolucion compra supermercado,APROBADA,OK,Aprobación automática
+TXN002,2026-06-01,4916338506082832,4539578763621486,2500.0,MXN,devolucion,Devolucion electrodomestico,PENDIENTE,OK,Requiere aprobación del gerente
+TXN003,2026-06-02,4556737586899855,4916338506082832,75.5,MXN,devolucion,Devolucion ropa en linea,APROBADA,OK,Aprobación automática
+TXN004,2026-06-02,4485276012450445,4532015112830366,8000.0,MXN,devolucion,Devolucion equipo de computo,REVISION,OK,Revisión especial
+TXN005,2026-06-03,4539578763621486,4556737586899855,320.0,MXN,devolucion,Devolucion restaurante,APROBADA,OK,Aprobación automática
+TXN006,2026-06-03,4916338506082832,4485276012450445,1500.0,MXN,devolucion,Devolucion viaje cancelado,PENDIENTE,OK,Requiere aprobación del gerente
+TXN007,2026-06-04,4532015112830366,4539578763621486,50.0,MXN,devolucion,Devolucion cargo duplicado,APROBADA,OK,Aprobación automática
+TXN008,2026-06-04,4556737586899855,4916338506082832,6500.0,MXN,devolucion,Devolucion maquinaria,REVISION,OK,Revisión especial
+TXN009,2026-06-05,4485276012450445,4532015112830366,900.0,MXN,devolucion,Devolucion servicio cancelado,APROBADA,OK,Aprobación automática
+TXN010,2026-06-05,4539578763621486,4556737586899855,3200.0,MXN,devolucion,Devolucion mobiliario oficina,PENDIENTE,OK,Requiere aprobación del gerente
+TXN011,2026-06-06,4916338506082832,4532015112830366,200.0,MXN,devolucion,Devolucion suscripcion,APROBADA,OK,Aprobación automática
+TXN012,2026-06-06,4532015112830366,4485276012450445,12000.0,MXN,devolucion,Devolucion vehiculo,REVISION,OK,Revisión especial
+TXN013,2026-06-07,4485276012450445,4539578763621486,450.0,MXN,devolucion,Devolucion herramientas,APROBADA,OK,Aprobación automática
+TXN014,2026-06-07,4556737586899855,4916338506082832,1200.0,MXN,devolucion,Devolucion equipo medico,PENDIENTE,OK,Requiere aprobación del gerente
+TXN015,2026-06-08,4539578763621486,4532015112830366,5500.0,MXN,devolucion,Devolucion materiales construccion,REVISION,OK,Revisión especial

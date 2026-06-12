@@ -1,12 +1,13 @@
 import pandas as pd
 
-def validar_datos(df):
+def validar_datos():
 
-    df = df.copy()
+    ruta = "/opt/airflow/data/devoluciones_temp.csv"
+
+    df = pd.read_csv(ruta)
 
     errores = []
 
-    # Validar que no haya valores nulos
 
     for _, fila in df.iterrows():
 
@@ -41,4 +42,6 @@ def validar_datos(df):
 
     df["validacion"] = errores
 
-    return df
+    print(df)
+
+    df.to_csv("/opt/airflow/data/devoluciones_validacion.csv", index=False)
