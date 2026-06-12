@@ -1,0 +1,54 @@
+{"timestamp":"2026-06-12T02:51:18.426317Z","level":"info","event":"::group::Pre Execute","logger":"task","filename":"task_runner.py","lineno":1926}
+{"timestamp":"2026-06-12T02:51:18.850486Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","task_id":"leer_csv","dag_id":"devoluciones_dag","run_id":"manual__2026-06-12T02:51:18.204669+00:00","try_number":1,"map_index":-1,"ti_id":"019eb9bd-b546-7233-97ab-cd86080b092d","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":209}
+{"timestamp":"2026-06-12T02:51:18.852162Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/devoluciones_dag.py","task_id":"leer_csv","dag_id":"devoluciones_dag","run_id":"manual__2026-06-12T02:51:18.204669+00:00","try_number":1,"map_index":-1,"ti_id":"019eb9bd-b546-7233-97ab-cd86080b092d","logger":"airflow.dag_processing.dagbag.BundleDagBag","filename":"dagbag.py","lineno":469}
+{"timestamp":"2026-06-12T02:51:18.863651Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"UserWarning","filename":"/opt/airflow/dags/devoluciones_dag.py","lineno":2,"task_id":"leer_csv","dag_id":"devoluciones_dag","run_id":"manual__2026-06-12T02:51:18.204669+00:00","try_number":1,"map_index":-1,"ti_id":"019eb9bd-b546-7233-97ab-cd86080b092d","logger":"py.warnings"}
+{"timestamp":"2026-06-12T02:51:18.888207Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.888557Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.888890Z","level":"info","event":"Current task name:leer_csv","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.889226Z","level":"info","event":"Dag name:devoluciones_dag","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.888616Z","level":"info","event":"::endgroup::","task_id":"leer_csv","dag_id":"devoluciones_dag","run_id":"manual__2026-06-12T02:51:18.204669+00:00","try_number":1,"map_index":-1,"ti_id":"019eb9bd-b546-7233-97ab-cd86080b092d","logger":"task","filename":"task_runner.py","lineno":1727}
+{"timestamp":"2026-06-12T02:51:18.898859Z","level":"info","event":"============================================================","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.899133Z","level":"info","event":"ARCHIVO LEÍDO CORRECTAMENTE","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.899353Z","level":"info","event":"============================================================","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.899551Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.899734Z","level":"info","event":"Primeros registros:","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.910014Z","level":"info","event":"  transaction_id       fecha  ...                     descripcion     estado","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.910432Z","level":"info","event":"0         TXN001  2026-06-01  ...  Devolucion compra supermercado  pendiente","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.910837Z","level":"info","event":"1         TXN002  2026-06-01  ...     Devolucion electrodomestico  pendiente","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.911239Z","level":"info","event":"2         TXN003  2026-06-02  ...        Devolucion ropa en linea  pendiente","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.911613Z","level":"info","event":"3         TXN004  2026-06-02  ...    Devolucion equipo de computo  pendiente","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.911965Z","level":"info","event":"4         TXN005  2026-06-03  ...          Devolucion restaurante  pendiente","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.912307Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.912609Z","level":"info","event":"[5 rows x 9 columns]","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.912885Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.913127Z","level":"info","event":"Información del DataFrame:","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.916304Z","level":"info","event":"<class 'pandas.core.frame.DataFrame'>","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.916575Z","level":"info","event":"RangeIndex: 15 entries, 0 to 14","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.916736Z","level":"info","event":"Data columns (total 9 columns):","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.916952Z","level":"info","event":" #   Column          Non-Null Count  Dtype","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.917228Z","level":"info","event":"---  ------          --------------  -----","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.917507Z","level":"info","event":" 0   transaction_id  15 non-null     object","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.917758Z","level":"info","event":" 1   fecha           15 non-null     object","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.917967Z","level":"info","event":" 2   cuenta_origen   15 non-null     int64","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.918151Z","level":"info","event":" 3   cuenta_destino  15 non-null     int64","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.918384Z","level":"info","event":" 4   monto           15 non-null     float64","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.918625Z","level":"info","event":" 5   moneda          15 non-null     object","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.918962Z","level":"info","event":" 6   tipo            15 non-null     object","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.919273Z","level":"info","event":" 7   descripcion     15 non-null     object","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.919452Z","level":"info","event":" 8   estado          15 non-null     object","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.919600Z","level":"info","event":"dtypes: float64(1), int64(2), object(6)","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.919742Z","level":"info","event":"memory usage: 1.2+ KB","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.919876Z","level":"info","event":"None","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.920004Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.920143Z","level":"info","event":"Número de registros: 15","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.920273Z","level":"info","event":"Número de columnas: 9","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.920399Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.920525Z","level":"info","event":"Columnas:","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.920745Z","level":"info","event":"['transaction_id', 'fecha', 'cuenta_origen', 'cuenta_destino', 'monto', 'moneda', 'tipo', 'descripcion', 'estado']","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.920889Z","level":"info","event":"============================================================","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.916376Z","level":"info","event":"Done. Returned value was: None","task_id":"leer_csv","dag_id":"devoluciones_dag","run_id":"manual__2026-06-12T02:51:18.204669+00:00","try_number":1,"map_index":-1,"ti_id":"019eb9bd-b546-7233-97ab-cd86080b092d","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":233}
+{"timestamp":"2026-06-12T02:51:18.916504Z","level":"info","event":"::group::Post Execute","task_id":"leer_csv","dag_id":"devoluciones_dag","run_id":"manual__2026-06-12T02:51:18.204669+00:00","try_number":1,"map_index":-1,"ti_id":"019eb9bd-b546-7233-97ab-cd86080b092d","logger":"task","filename":"task_runner.py","lineno":1288}
+{"timestamp":"2026-06-12T02:51:18.938503Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.939159Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.939602Z","level":"info","event":"Task operator:<Task(PythonOperator): leer_csv>","logger":"task.stdout"}
+{"timestamp":"2026-06-12T02:51:18.938877Z","level":"info","event":"::endgroup::","task_id":"leer_csv","dag_id":"devoluciones_dag","run_id":"manual__2026-06-12T02:51:18.204669+00:00","try_number":1,"map_index":-1,"ti_id":"019eb9bd-b546-7233-97ab-cd86080b092d","logger":"task","filename":"task_runner.py","lineno":1896}
