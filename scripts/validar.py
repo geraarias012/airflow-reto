@@ -28,7 +28,7 @@ def validar_datos(ti):
             error.append("cuenta vacía")
 
         # Monto
-        if fila["monto"] <= 0:
+        if fila["monto"] <= 0 or pd.isna(fila["monto"]):
             error.append("monto inválido")
 
         # Moneda
