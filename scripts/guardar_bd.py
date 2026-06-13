@@ -2,13 +2,14 @@ import pandas as pd
 import sqlite3
 
 
-def guardar_bd():
+def guardar_bd(ti):
 
-    ruta_csv = "/opt/airflow/data/devoluciones_procesadas.csv"
+    datos = ti.xcom_pull(task_ids='aplicar_reglas')
+
     ruta_bd = "/opt/airflow/database/devoluciones.db"
 
-    # Leer CSV
-    df = pd.read_csv(ruta_csv)
+    # Leer JSON
+    df = pd.read_json(datos)
 
     # Conectar a SQLite
     conexion = sqlite3.connect(ruta_bd)

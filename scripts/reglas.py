@@ -1,11 +1,11 @@
 import pandas as pd
 
 
-def aplicar_reglas():
+def aplicar_reglas(ti):
 
-    ruta = "/opt/airflow/data/devoluciones_validacion.csv"
+    datos = ti.xcom_pull(task_ids='validar_datos')
 
-    df = pd.read_csv(ruta)
+    df = pd.read_json(datos)
 
     estados = []
     reglas = []
@@ -67,4 +67,4 @@ def aplicar_reglas():
         "regla_aplicada"
     ]])
 
-    df.to_csv("/opt/airflow/data/devoluciones_procesadas.csv", index=False)
+    return df.to_json()

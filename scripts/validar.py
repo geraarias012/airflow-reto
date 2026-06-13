@@ -1,10 +1,10 @@
 import pandas as pd
 
-def validar_datos():
+def validar_datos(ti):
 
-    ruta = "/opt/airflow/data/devoluciones_temp.csv"
+    datos = ti.xcom_pull(task_ids='leer_csv')
 
-    df = pd.read_csv(ruta)
+    df = pd.read_json(datos)
 
     errores = []
 
@@ -41,4 +41,4 @@ def validar_datos():
 
     print(df)
 
-    df.to_csv("/opt/airflow/data/devoluciones_validacion.csv", index=False)
+    return df.to_json()
