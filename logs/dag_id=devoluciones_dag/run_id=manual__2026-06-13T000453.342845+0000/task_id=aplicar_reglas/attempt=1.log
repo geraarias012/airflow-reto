@@ -1,0 +1,34 @@
+{"timestamp":"2026-06-13T00:04:57.393739Z","level":"info","event":"::group::Pre Execute","logger":"task","filename":"task_runner.py","lineno":1926}
+{"timestamp":"2026-06-13T00:04:57.690120Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","ti_id":"019ebe4b-b5f1-73e2-a8bf-96065a7d3b07","map_index":-1,"run_id":"manual__2026-06-13T00:04:53.342845+00:00","task_id":"aplicar_reglas","try_number":1,"dag_id":"devoluciones_dag","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":209}
+{"timestamp":"2026-06-13T00:04:57.691707Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/devoluciones_dag.py","ti_id":"019ebe4b-b5f1-73e2-a8bf-96065a7d3b07","map_index":-1,"run_id":"manual__2026-06-13T00:04:53.342845+00:00","task_id":"aplicar_reglas","try_number":1,"dag_id":"devoluciones_dag","logger":"airflow.dag_processing.dagbag.BundleDagBag","filename":"dagbag.py","lineno":469}
+{"timestamp":"2026-06-13T00:04:57.726548Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"UserWarning","filename":"/opt/airflow/dags/devoluciones_dag.py","lineno":2,"ti_id":"019ebe4b-b5f1-73e2-a8bf-96065a7d3b07","map_index":-1,"run_id":"manual__2026-06-13T00:04:53.342845+00:00","task_id":"aplicar_reglas","try_number":1,"dag_id":"devoluciones_dag","logger":"py.warnings"}
+{"timestamp":"2026-06-13T00:04:57.746052Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:04:57.746544Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:04:57.747012Z","level":"info","event":"Current task name:aplicar_reglas","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:04:57.747415Z","level":"info","event":"Dag name:devoluciones_dag","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:04:57.746352Z","level":"info","event":"::endgroup::","ti_id":"019ebe4b-b5f1-73e2-a8bf-96065a7d3b07","map_index":-1,"run_id":"manual__2026-06-13T00:04:53.342845+00:00","task_id":"aplicar_reglas","try_number":1,"dag_id":"devoluciones_dag","logger":"task","filename":"task_runner.py","lineno":1727}
+{"timestamp":"2026-06-13T00:04:57.766656Z","level":"info","event":"RESULTADO DE LAS REGLAS","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:04:57.773998Z","level":"info","event":"   transaction_id  ...                                     regla_aplicada","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:04:57.774514Z","level":"info","event":"0          TXN001  ...  Aprobación automática; Marcado como posible fr...","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:04:57.774902Z","level":"info","event":"1          TXN002  ...  Requiere aprobación del gerente; Marcado como ...","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:04:57.775355Z","level":"info","event":"2          TXN003  ...  Aprobación automática; Marcado como posible fr...","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:04:57.775788Z","level":"info","event":"3          TXN004  ...  Revisión especial; Marcado como posible fraude...","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:04:57.776161Z","level":"info","event":"4          TXN005  ...                              Aprobación automática","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:04:57.776564Z","level":"info","event":"5          TXN006  ...  Requiere aprobación del gerente; Marcado como ...","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:04:57.776983Z","level":"info","event":"6          TXN007  ...  Aprobación automática; Marcado como posible fr...","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:04:57.777392Z","level":"info","event":"7          TXN008  ...  Revisión especial; Marcado como posible fraude...","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:04:57.777805Z","level":"info","event":"8          TXN009  ...  Aprobación automática; Marcado como posible fr...","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:04:57.778248Z","level":"info","event":"9          TXN010  ...                    Requiere aprobación del gerente","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:04:57.778682Z","level":"info","event":"10         TXN011  ...  Aprobación automática; Marcado como posible fr...","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:04:57.779075Z","level":"info","event":"11         TXN012  ...  Revisión especial; Marcado como posible fraude...","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:04:57.779529Z","level":"info","event":"12         TXN013  ...  Aprobación automática; Marcado como posible fr...","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:04:57.779867Z","level":"info","event":"13         TXN014  ...  Requiere aprobación del gerente; Marcado como ...","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:04:57.780269Z","level":"info","event":"14         TXN015  ...                                  Revisión especial","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:04:57.780629Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:04:57.781041Z","level":"info","event":"[15 rows x 4 columns]","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:04:57.778951Z","level":"info","event":"Done. Returned value was: None","ti_id":"019ebe4b-b5f1-73e2-a8bf-96065a7d3b07","map_index":-1,"run_id":"manual__2026-06-13T00:04:53.342845+00:00","task_id":"aplicar_reglas","try_number":1,"dag_id":"devoluciones_dag","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":233}
+{"timestamp":"2026-06-13T00:04:57.779087Z","level":"info","event":"::group::Post Execute","ti_id":"019ebe4b-b5f1-73e2-a8bf-96065a7d3b07","map_index":-1,"run_id":"manual__2026-06-13T00:04:53.342845+00:00","task_id":"aplicar_reglas","try_number":1,"dag_id":"devoluciones_dag","logger":"task","filename":"task_runner.py","lineno":1288}
+{"timestamp":"2026-06-13T00:04:57.799445Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:04:57.799934Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:04:57.800334Z","level":"info","event":"Task operator:<Task(PythonOperator): aplicar_reglas>","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:04:57.799676Z","level":"info","event":"::endgroup::","ti_id":"019ebe4b-b5f1-73e2-a8bf-96065a7d3b07","map_index":-1,"run_id":"manual__2026-06-13T00:04:53.342845+00:00","task_id":"aplicar_reglas","try_number":1,"dag_id":"devoluciones_dag","logger":"task","filename":"task_runner.py","lineno":1896}

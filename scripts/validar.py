@@ -23,10 +23,7 @@ def validar_datos():
         except:
             error.append("Fecha no es una fecha válida")
 
-        # Cuentas
-        if pd.isna(fila["cuenta_origen"]):
-            error.append("cuenta origen vacía")
-
+        # Cuenta
         if pd.isna(fila["cuenta_destino"]):
             error.append("cuenta destino vacía")
 

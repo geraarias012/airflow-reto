@@ -1,16 +1,16 @@
-transaction_id,fecha,cuenta_origen,cuenta_destino,monto,moneda,tipo,descripcion,estado
-TXN001,2026-06-01,4532015112830366,4485276012450445,150.00,MXN,devolucion,Devolucion compra supermercado,pendiente
-TXN002,2026-06-01,4916338506082832,4539578763621486,2500.00,MXN,devolucion,Devolucion electrodomestico,pendiente
-TXN003,2026-06-02,4556737586899855,4916338506082832,75.50,MXN,devolucion,Devolucion ropa en linea,pendiente
-TXN004,2026-06-02,4485276012450445,4532015112830366,8000.00,MXN,devolucion,Devolucion equipo de computo,pendiente
-TXN005,2026-06-03,4539578763621486,4556737586899855,320.00,MXN,devolucion,Devolucion restaurante,pendiente
-TXN006,2026-06-03,4916338506082832,4485276012450445,1500.00,MXN,devolucion,Devolucion viaje cancelado,pendiente
-TXN007,2026-06-04,4532015112830366,4539578763621486,50.00,MXN,devolucion,Devolucion cargo duplicado,pendiente
-TXN008,2026-06-04,4556737586899855,4916338506082832,6500.00,MXN,devolucion,Devolucion maquinaria,pendiente
-TXN009,2026-06-05,4485276012450445,4532015112830366,900.00,MXN,devolucion,Devolucion servicio cancelado,pendiente
-TXN010,2026-06-05,4539578763621486,4556737586899855,3200.00,MXN,devolucion,Devolucion mobiliario oficina,pendiente
-TXN011,2026-06-06,4916338506082832,4532015112830366,200.00,MXN,devolucion,Devolucion suscripcion,pendiente
-TXN012,2026-06-06,4532015112830366,4485276012450445,12000.00,MXN,devolucion,Devolucion vehiculo,pendiente
-TXN013,2026-06-07,4485276012450445,4539578763621486,450.00,MXN,devolucion,Devolucion herramientas,pendiente
-TXN014,2026-06-07,4556737586899855,4916338506082832,1200.00,MXN,devolucion,Devolucion equipo medico,pendiente
-TXN015,2026-06-08,4539578763621486,4532015112830366,5500.00,MXN,devolucion,Devolucion materiales construccion,pendiente
+transaction_id,fecha,cuenta_destino,monto,moneda,tipo,descripcion,estado
+TXN001,2026-06-01,4485276012450445,150.00,MXN,devolucion,Devolucion compra supermercado,pendiente
+TXN002,2026-06-01,4539578763621486,2500.00,MXN,devolucion,Devolucion electrodomestico,pendiente
+TXN003,2026-06-02,4916338506082832,75.50,MXN,devolucion,Devolucion ropa en linea,pendiente
+TXN004,2026-06-02,4532015112830366,8000.00,MXN,devolucion,Devolucion equipo de computo,pendiente
+TXN005,2026-06-03,4556737586899855,320.00,MXN,devolucion,Devolucion restaurante,pendiente
+TXN006,2026-06-03,4485276012450445,1500.00,MXN,devolucion,Devolucion viaje cancelado,pendiente
+TXN007,2026-06-04,4539578763621486,50.00,MXN,devolucion,Devolucion cargo duplicado,pendiente
+TXN008,2026-06-04,4916338506082832,6500.00,MXN,devolucion,Devolucion maquinaria,pendiente
+TXN009,2026-06-05,4532015112830366,900.00,MXN,devolucion,Devolucion servicio cancelado,pendiente
+TXN010,2026-06-05,4556737586899855,3200.00,MXN,devolucion,Devolucion mobiliario oficina,pendiente
+TXN011,2026-06-06,4532015112830366,200.00,MXN,devolucion,Devolucion suscripcion,pendiente
+TXN012,2026-06-06,4485276012450445,12000.00,MXN,devolucion,Devolucion vehiculo,pendiente
+TXN013,2026-06-07,4539578763621486,450.00,MXN,devolucion,Devolucion herramientas,pendiente
+TXN014,2026-06-07,4916338506082832,1200.00,MXN,devolucion,Devolucion equipo medico,pendiente
+TXN015,2026-06-08,4532015112830366,5500.00,MXN,devolucion,Devolucion materiales construccion,pendiente

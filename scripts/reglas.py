@@ -15,18 +15,18 @@ def aplicar_reglas():
         # Si la validación falló, no aplicar reglas
         if fila["validacion"] != "OK":
             estados.append("ERROR")
-            reglas.append("Registro inválido")
+            reglas.append("Registro invalido")
             continue
 
         monto = fila["monto"]
 
         if monto <= 1000:
             estados.append("APROBADA")
-            reglas.append("Aprobación automática")
+            reglas.append("Aprobación automatica")
 
         elif monto <= 5000:
             estados.append("PENDIENTE")
-            reglas.append("Requiere aprobación del gerente")
+            reglas.append("Requiere aprobacion del gerente")
 
         else:
             estados.append("REVISION")
@@ -34,6 +34,29 @@ def aplicar_reglas():
 
     df["estado"] = estados
     df["regla_aplicada"] = reglas
+
+    df["fecha"] = pd.to_datetime(df["fecha"])
+    df["semana"] = df["fecha"].dt.to_period("W")
+
+    conteo = (
+        df.groupby(["cuenta_destino", "semana"])
+        .size()
+        .reset_index(name="total")
+    )
+
+    cuentas_posible_fraude = conteo[conteo["total"] >= 3]
+
+    for _, fila in cuentas_posible_fraude.iterrows():
+
+        mascara = (
+            (df["cuenta_destino"] == fila["cuenta_destino"]) &
+            (df["semana"] == fila["semana"])
+        )
+
+        df.loc[mascara, "estado"] = "POSIBLE FRAUDE"
+        df.loc[mascara, "regla_aplicada"] = "Marcado como posible fraude por multiples devoluciones"
+
+    df.drop(columns=["semana"], inplace=True)
 
     print("RESULTADO DE LAS REGLAS")
 
