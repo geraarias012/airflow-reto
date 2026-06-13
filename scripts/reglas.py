@@ -39,7 +39,7 @@ def aplicar_reglas():
     df["semana"] = df["fecha"].dt.to_period("W")
 
     conteo = (
-        df.groupby(["cuenta_destino", "semana"])
+        df.groupby(["cuenta", "semana"])
         .size()
         .reset_index(name="total")
     )
@@ -49,7 +49,7 @@ def aplicar_reglas():
     for _, fila in cuentas_posible_fraude.iterrows():
 
         mascara = (
-            (df["cuenta_destino"] == fila["cuenta_destino"]) &
+            (df["cuenta"] == fila["cuenta"]) &
             (df["semana"] == fila["semana"])
         )
 

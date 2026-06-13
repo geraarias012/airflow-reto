@@ -1,0 +1,31 @@
+{"timestamp":"2026-06-13T01:21:01.256905Z","level":"info","event":"::group::Pre Execute","logger":"task","filename":"task_runner.py","lineno":1926}
+{"timestamp":"2026-06-13T01:21:01.648312Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","ti_id":"019ebe91-4a47-77d9-9299-f3be9e90b2ba","map_index":-1,"run_id":"manual__2026-06-13T01:20:53.296538+00:00","task_id":"reporte_diario","try_number":1,"dag_id":"devoluciones_dag","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":209}
+{"timestamp":"2026-06-13T01:21:01.650059Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/devoluciones_dag.py","ti_id":"019ebe91-4a47-77d9-9299-f3be9e90b2ba","map_index":-1,"run_id":"manual__2026-06-13T01:20:53.296538+00:00","task_id":"reporte_diario","try_number":1,"dag_id":"devoluciones_dag","logger":"airflow.dag_processing.dagbag.BundleDagBag","filename":"dagbag.py","lineno":469}
+{"timestamp":"2026-06-13T01:21:01.686740Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"UserWarning","filename":"/opt/airflow/dags/devoluciones_dag.py","lineno":2,"ti_id":"019ebe91-4a47-77d9-9299-f3be9e90b2ba","map_index":-1,"run_id":"manual__2026-06-13T01:20:53.296538+00:00","task_id":"reporte_diario","try_number":1,"dag_id":"devoluciones_dag","logger":"py.warnings"}
+{"timestamp":"2026-06-13T01:21:01.712280Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-06-13T01:21:01.712720Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-06-13T01:21:01.713174Z","level":"info","event":"Current task name:reporte_diario","logger":"task.stdout"}
+{"timestamp":"2026-06-13T01:21:01.713607Z","level":"info","event":"Dag name:devoluciones_dag","logger":"task.stdout"}
+{"timestamp":"2026-06-13T01:21:01.712677Z","level":"info","event":"::endgroup::","ti_id":"019ebe91-4a47-77d9-9299-f3be9e90b2ba","map_index":-1,"run_id":"manual__2026-06-13T01:20:53.296538+00:00","task_id":"reporte_diario","try_number":1,"dag_id":"devoluciones_dag","logger":"task","filename":"task_runner.py","lineno":1727}
+{"timestamp":"2026-06-13T01:21:01.927859Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-06-13T01:21:01.928267Z","level":"info","event":"REPORTE DIARIO","logger":"task.stdout"}
+{"timestamp":"2026-06-13T01:21:01.939976Z","level":"info","event":"          fecha  total_devoluciones  ...  fraude  validaciones_fallidas","logger":"task.stdout"}
+{"timestamp":"2026-06-13T01:21:01.940394Z","level":"info","event":"0    2026-01-01                  31  ...       0                      0","logger":"task.stdout"}
+{"timestamp":"2026-06-13T01:21:01.940767Z","level":"info","event":"1    2026-01-02                  30  ...       0                      0","logger":"task.stdout"}
+{"timestamp":"2026-06-13T01:21:01.941148Z","level":"info","event":"2    2026-01-03                  25  ...       2                      1","logger":"task.stdout"}
+{"timestamp":"2026-06-13T01:21:01.941489Z","level":"info","event":"3    2026-01-04                  37  ...       1                      0","logger":"task.stdout"}
+{"timestamp":"2026-06-13T01:21:01.941842Z","level":"info","event":"4    2026-01-05                  33  ...       2                      1","logger":"task.stdout"}
+{"timestamp":"2026-06-13T01:21:01.942206Z","level":"info","event":"..          ...                 ...  ...     ...                    ...","logger":"task.stdout"}
+{"timestamp":"2026-06-13T01:21:01.942492Z","level":"info","event":"158  2026-06-08                  25  ...       1                      1","logger":"task.stdout"}
+{"timestamp":"2026-06-13T01:21:01.942912Z","level":"info","event":"159  2026-06-09                  36  ...       2                      0","logger":"task.stdout"}
+{"timestamp":"2026-06-13T01:21:01.943314Z","level":"info","event":"160  2026-06-10                  39  ...       0                      0","logger":"task.stdout"}
+{"timestamp":"2026-06-13T01:21:01.943790Z","level":"info","event":"161  2026-06-11                  25  ...       0                      0","logger":"task.stdout"}
+{"timestamp":"2026-06-13T01:21:01.944158Z","level":"info","event":"162  2026-06-12                  19  ...       0                      0","logger":"task.stdout"}
+{"timestamp":"2026-06-13T01:21:01.944576Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-06-13T01:21:01.944978Z","level":"info","event":"[163 rows x 8 columns]","logger":"task.stdout"}
+{"timestamp":"2026-06-13T01:21:01.942704Z","level":"info","event":"Done. Returned value was: None","ti_id":"019ebe91-4a47-77d9-9299-f3be9e90b2ba","map_index":-1,"run_id":"manual__2026-06-13T01:20:53.296538+00:00","task_id":"reporte_diario","try_number":1,"dag_id":"devoluciones_dag","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":233}
+{"timestamp":"2026-06-13T01:21:01.942854Z","level":"info","event":"::group::Post Execute","ti_id":"019ebe91-4a47-77d9-9299-f3be9e90b2ba","map_index":-1,"run_id":"manual__2026-06-13T01:20:53.296538+00:00","task_id":"reporte_diario","try_number":1,"dag_id":"devoluciones_dag","logger":"task","filename":"task_runner.py","lineno":1288}
+{"timestamp":"2026-06-13T01:21:01.977996Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-06-13T01:21:01.979469Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-06-13T01:21:01.979958Z","level":"info","event":"Task operator:<Task(PythonOperator): reporte_diario>","logger":"task.stdout"}
+{"timestamp":"2026-06-13T01:21:01.978489Z","level":"info","event":"::endgroup::","ti_id":"019ebe91-4a47-77d9-9299-f3be9e90b2ba","map_index":-1,"run_id":"manual__2026-06-13T01:20:53.296538+00:00","task_id":"reporte_diario","try_number":1,"dag_id":"devoluciones_dag","logger":"task","filename":"task_runner.py","lineno":1896}

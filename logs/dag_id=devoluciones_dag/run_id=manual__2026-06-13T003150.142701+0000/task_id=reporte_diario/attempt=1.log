@@ -1,0 +1,50 @@
+{"timestamp":"2026-06-13T00:31:57.639207Z","level":"info","event":"::group::Pre Execute","logger":"task","filename":"task_runner.py","lineno":1926}
+{"timestamp":"2026-06-13T00:31:57.975793Z","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","ti_id":"019ebe64-6196-768b-bf48-dbe78b2da68c","map_index":-1,"run_id":"manual__2026-06-13T00:31:50.142701+00:00","task_id":"reporte_diario","try_number":1,"dag_id":"devoluciones_dag","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":209}
+{"timestamp":"2026-06-13T00:31:57.977424Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/devoluciones_dag.py","ti_id":"019ebe64-6196-768b-bf48-dbe78b2da68c","map_index":-1,"run_id":"manual__2026-06-13T00:31:50.142701+00:00","task_id":"reporte_diario","try_number":1,"dag_id":"devoluciones_dag","logger":"airflow.dag_processing.dagbag.BundleDagBag","filename":"dagbag.py","lineno":469}
+{"timestamp":"2026-06-13T00:31:58.009061Z","level":"warning","event":"The `airflow.operators.python.PythonOperator` attribute is deprecated. Please use `'airflow.providers.standard.operators.python.PythonOperator'`.","category":"UserWarning","filename":"/opt/airflow/dags/devoluciones_dag.py","lineno":2,"ti_id":"019ebe64-6196-768b-bf48-dbe78b2da68c","map_index":-1,"run_id":"manual__2026-06-13T00:31:50.142701+00:00","task_id":"reporte_diario","try_number":1,"dag_id":"devoluciones_dag","logger":"py.warnings"}
+{"timestamp":"2026-06-13T00:31:58.031290Z","level":"info","event":"Task instance is in running state","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.031816Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.032299Z","level":"info","event":"Current task name:reporte_diario","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.032682Z","level":"info","event":"Dag name:devoluciones_dag","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.031653Z","level":"info","event":"::endgroup::","ti_id":"019ebe64-6196-768b-bf48-dbe78b2da68c","map_index":-1,"run_id":"manual__2026-06-13T00:31:50.142701+00:00","task_id":"reporte_diario","try_number":1,"dag_id":"devoluciones_dag","logger":"task","filename":"task_runner.py","lineno":1727}
+{"timestamp":"2026-06-13T00:31:58.107937Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.108314Z","level":"info","event":"REPORTE DIARIO","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.117464Z","level":"info","event":"         fecha  total_devoluciones  ...  pendientes  revision","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.117957Z","level":"info","event":"0   2026-06-01                 160  ...           0         0","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.118349Z","level":"info","event":"1   2026-06-02                 178  ...           0         0","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.118639Z","level":"info","event":"2   2026-06-03                 175  ...           0         0","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.118975Z","level":"info","event":"3   2026-06-04                 166  ...           0         0","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.119415Z","level":"info","event":"4   2026-06-05                 151  ...           0         0","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.119823Z","level":"info","event":"5   2026-06-06                 183  ...           0         0","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.120144Z","level":"info","event":"6   2026-06-07                 164  ...           0         0","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.120444Z","level":"info","event":"7   2026-06-08                 181  ...           0         0","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.120753Z","level":"info","event":"8   2026-06-09                 161  ...           0         0","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.121099Z","level":"info","event":"9   2026-06-10                 155  ...           0         0","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.121414Z","level":"info","event":"10  2026-06-11                 170  ...           0         0","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.121718Z","level":"info","event":"11  2026-06-12                 160  ...           0         0","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.121937Z","level":"info","event":"12  2026-06-13                 176  ...           0         0","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.122131Z","level":"info","event":"13  2026-06-14                 163  ...           0         0","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.122313Z","level":"info","event":"14  2026-06-15                 172  ...           0         0","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.122498Z","level":"info","event":"15  2026-06-16                 176  ...           0         0","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.122681Z","level":"info","event":"16  2026-06-17                 156  ...           0         0","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.122869Z","level":"info","event":"17  2026-06-18                 157  ...           0         0","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.123050Z","level":"info","event":"18  2026-06-19                 163  ...           0         0","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.123222Z","level":"info","event":"19  2026-06-20                 167  ...           0         0","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.123371Z","level":"info","event":"20  2026-06-21                 176  ...           0         0","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.123515Z","level":"info","event":"21  2026-06-22                 182  ...           0         0","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.123656Z","level":"info","event":"22  2026-06-23                 160  ...           0         0","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.123795Z","level":"info","event":"23  2026-06-24                 176  ...           0         0","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.123941Z","level":"info","event":"24  2026-06-25                 174  ...           0         0","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.124106Z","level":"info","event":"25  2026-06-26                 168  ...           0         0","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.124304Z","level":"info","event":"26  2026-06-27                 153  ...           0         0","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.124487Z","level":"info","event":"27  2026-06-28                 159  ...           0         0","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.124667Z","level":"info","event":"28  2026-06-29                 141  ...           0         0","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.124823Z","level":"info","event":"29  2026-06-30                 177  ...           0         0","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.124976Z","level":"info","event":"","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.125126Z","level":"info","event":"[30 rows x 6 columns]","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.120244Z","level":"info","event":"Done. Returned value was: None","ti_id":"019ebe64-6196-768b-bf48-dbe78b2da68c","map_index":-1,"run_id":"manual__2026-06-13T00:31:50.142701+00:00","task_id":"reporte_diario","try_number":1,"dag_id":"devoluciones_dag","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":233}
+{"timestamp":"2026-06-13T00:31:58.120386Z","level":"info","event":"::group::Post Execute","ti_id":"019ebe64-6196-768b-bf48-dbe78b2da68c","map_index":-1,"run_id":"manual__2026-06-13T00:31:50.142701+00:00","task_id":"reporte_diario","try_number":1,"dag_id":"devoluciones_dag","logger":"task","filename":"task_runner.py","lineno":1288}
+{"timestamp":"2026-06-13T00:31:58.142002Z","level":"info","event":"Task instance in success state","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.142299Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.142521Z","level":"info","event":"Task operator:<Task(PythonOperator): reporte_diario>","logger":"task.stdout"}
+{"timestamp":"2026-06-13T00:31:58.142352Z","level":"info","event":"::endgroup::","ti_id":"019ebe64-6196-768b-bf48-dbe78b2da68c","map_index":-1,"run_id":"manual__2026-06-13T00:31:50.142701+00:00","task_id":"reporte_diario","try_number":1,"dag_id":"devoluciones_dag","logger":"task","filename":"task_runner.py","lineno":1896}

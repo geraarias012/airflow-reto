@@ -15,7 +15,9 @@ def reporte_diario():
             monto_total=("monto", "sum"),
             aprobadas=("estado", lambda x: (x == "APROBADA").sum()),
             pendientes=("estado", lambda x: (x == "PENDIENTE").sum()),
-            revision=("estado", lambda x: (x == "REVISION").sum())
+            revision=("estado", lambda x: (x == "REVISION").sum()),
+            fraude=("estado", lambda x: (x == "POSIBLE FRAUDE").sum()),
+            validaciones_fallidas=("validacion", lambda x: (x != "OK").sum())
         )
         .reset_index()
     )
@@ -48,7 +50,9 @@ def reporte_semanal():
             monto_total=("monto", "sum"),
             aprobadas=("estado", lambda x: (x == "APROBADA").sum()),
             pendientes=("estado", lambda x: (x == "PENDIENTE").sum()),
-            revision=("estado", lambda x: (x == "REVISION").sum())
+            revision=("estado", lambda x: (x == "REVISION").sum()),
+            fraude=("estado", lambda x: (x == "POSIBLE FRAUDE").sum()),
+            validaciones_fallidas=("validacion", lambda x: (x != "OK").sum())
         )
         .reset_index()
     )
@@ -63,7 +67,9 @@ def reporte_semanal():
         "monto_total",
         "aprobadas",
         "pendientes",
-        "revision"
+        "revision",
+        "fraude",
+        "validaciones_fallidas"
     ]]
 
     reporte.to_csv(
