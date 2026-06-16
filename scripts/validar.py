@@ -6,39 +6,51 @@ def validar_datos(ti):
 
     df = pd.read_json(datos)
 
-    errores = []
-
+    estados = []
 
     for _, fila in df.iterrows():
 
-        error = []
+        error = False
 
         #Transacción ID
         if pd.isnull(fila['transaction_id']):
-            error.append("Transacción ID es nulo")
+            error = True
         
         #Fecha de Devolución
         try:
             pd.to_datetime(fila['fecha'])
         except:
-            error.append("Fecha no es una fecha válida")
+            error = True
 
         # Cuenta
         if pd.isna(fila["cuenta"]):
-            error.append("cuenta vacía")
+            error = True
 
         # Monto
         if fila["monto"] <= 0 or pd.isna(fila["monto"]):
-            error.append("monto inválido")
+            error = True
 
         # Moneda
         if pd.isna(fila["moneda"]):
-            error.append("moneda vacía")
+            error = True
 
-        errores.append(", ".join(error) if error else "OK")
+        if pd.isna(fila["tipo"]):
+            error = True
 
-    df["validacion"] = errores
+        if error:
+            estados.append("NO APROBADA POR DATOS FALTANTES")
+        else:
+            estados.append("PENDIENTE")
+
+    df["estado"] = estados
 
     print(df)
 
-    return df.to_json()
+    # Separar en dos grupos
+    pendientes = df[df["estado"] == "PENDIENTE"].to_json()
+    no_aprobados = df[df["estado"] == "NO APROBADA POR DATOS FALTANTES"].to_json()
+
+    return {
+        "pendientes": pendientes, 
+        "no_aprobados": no_aprobados
+    }
