@@ -46,6 +46,9 @@ def validar_datos(ti):
 
     print(df)
 
+    # Convertir fecha a string para mantener formato original
+    df["fecha"] = df["fecha"].astype(str)
+
     # Separar en dos grupos
     pendientes = df[df["estado"] == "PENDIENTE"].to_json()
     no_aprobados = df[df["estado"] == "NO APROBADA POR DATOS FALTANTES"].to_json()

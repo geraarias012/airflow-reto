@@ -11,8 +11,8 @@ from leer_csv import leer_csv
 from reglas import aplicar_reglas
 from aprobacion_gerente import aprobacion_gerente
 from validar_tiempo import validar_tiempo
-from guardar_bd import guardar_bd, get_no_aprobados, combinar_datos
-from reportes import reporte_diario, reporte_semanal
+from guardar_bd import guardar_bd, combinar_datos
+from reportes import generar_reportes
 
 with DAG(
     dag_id="devoluciones_dag",
@@ -33,10 +33,6 @@ with DAG(
         task_id="aplicar_reglas",
         python_callable=aplicar_reglas,
     )
-    no_aprobados = PythonOperator(
-        task_id="get_no_aprobados",
-        python_callable=get_no_aprobados,
-    )
     gerente = PythonOperator(
         task_id="aprobacion_gerente",
         python_callable=aprobacion_gerente,
@@ -53,20 +49,16 @@ with DAG(
         task_id="guardar_bd",
         python_callable=guardar_bd,
     )
-    reporte_diario_task = PythonOperator(
-        task_id="reporte_diario",
-        python_callable=reporte_diario,
-    )
-    reporte_semanal_task = PythonOperator(
-        task_id="reporte_semanal",
-        python_callable=reporte_semanal,
+    reportes = PythonOperator(
+        task_id="generar_reportes",
+        python_callable=generar_reportes,
     )
 
     # Flujo con bifurcaciones
     leer_archivo >> validar_archivo
     
     # Bifurcación 1: no aprobados vs reglas
-    validar_archivo >> [no_aprobados, reglas]
+    validar_archivo >> reglas
     
     # Bifurcación 2: reglas genera 3 outputs - fraudes y aprobadas van a guardar, pendientes a gerente
     reglas >> gerente
@@ -75,5 +67,4 @@ with DAG(
     gerente >> tiempo
     
     # Convergencia: todo confluye en combinar
-    [no_aprobados, reglas, gerente, tiempo] >> combinar >> guardar >> [reporte_diario_task, reporte_semanal_task]
-
+    [validar_archivo, reglas, gerente, tiempo] >> combinar >> guardar >> reportes

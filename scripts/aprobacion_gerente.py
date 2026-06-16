@@ -27,6 +27,9 @@ def aprobacion_gerente(ti):
     print("APROBACIÓN GERENTE")
     print(df.head())
     
+    # Convertir fecha a string para mantener formato original
+    df["fecha"] = df["fecha"].astype(str)
+    
     # Retornar dos grupos
     aprobadas = df[df["estado"] == "APROBADA"].to_json()
     pendientes_tiempo = df[(df["estado"] == "PENDIENTE") & (df.index.isin(para_validar_tiempo))].to_json()

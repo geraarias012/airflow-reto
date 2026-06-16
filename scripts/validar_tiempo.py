@@ -36,6 +36,9 @@ def validar_tiempo(ti):
     print("VALIDACIÓN DE TIEMPO")
     print(df.head())
     
+    # Convertir fecha a string para mantener formato original
+    df["fecha"] = df["fecha"].astype(str)
+    
     # Retornar dos grupos
     aprobadas = df[df["estado"] == "APROBADA"].to_json()
     pendientes = df[(df["estado"] == "PENDIENTE") & (df.index.isin(pendientes_tiempo))].to_json()

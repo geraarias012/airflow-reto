@@ -51,6 +51,9 @@ def guardar_bd(ti):
     # Leer JSON
     df = pd.read_json(datos)
 
+    # Convertir fecha de string a datetime para la base de datos
+    df["fecha"] = pd.to_datetime(df["fecha"])
+
     # Conectar a SQLite
     conexion = sqlite3.connect(ruta_bd)
 

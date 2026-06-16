@@ -51,6 +51,9 @@ def aplicar_reglas(ti):
 
     df.drop(columns=["semana"], inplace=True)
 
+    # Convertir fecha a string para mantener formato original
+    df["fecha"] = df["fecha"].astype(str)
+
     print("RESULTADO DE LAS REGLAS")
     print(df.head())
 
